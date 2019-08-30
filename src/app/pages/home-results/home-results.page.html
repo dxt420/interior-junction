@@ -1,0 +1,261 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>
+        <ion-text >
+          <ion-text style="color:white" class="fw700">Interior<span style="font-weight:350;">Junction</span></ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
+        <ion-icon name="notifications"></ion-icon>
+       
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-card no-margin class="no-radius">
+    <ion-item lines="none" color="medium">
+      <ion-label>
+        <h2 no-margin class="fw500 no-margin">
+          <ion-text color="dark">Filter: </ion-text>
+        </h2>
+
+        <p class="text-11x no-margin">
+          <ion-text  color="primary">{{yourLocation}}</ion-text>
+        </p>
+      </ion-label>
+      <ion-button shape="round" fill="outline" size="small" color="primary" (click)="alertLocation()">
+        Location
+        <ion-icon name="locate"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card> -->
+<ion-list>
+   <ion-item lines="none" style="color:black">
+      <ion-card class="bg-white">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4">
+                  <ion-img [src]="chair1"></ion-img>
+
+                </ion-col>
+            <ion-col size="8">
+                <ion-label>
+                    <ion-text text-wrap color="secondary">
+                      <h5><strong>Grey Mid-Century Sofa</strong></h5>
+                    </ion-text>
+                    <ion-text text-wrap color="secondary">
+                      <h6>
+                          Vintage 70’s couch with ashy finish
+                      </h6>
+                    </ion-text>
+               
+                 
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Price:</strong> UGX. 950,000
+                            </h6>
+                         
+                        </ion-text>
+
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Category:</strong> Chairs
+                            </h6>
+                         
+                        </ion-text>
+                    
+                     
+                   
+               
+                  </ion-label>
+              
+    
+            </ion-col>
+           
+           
+         
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    
+    </ion-item>
+
+    <ion-item lines="none" style="color:black">
+      <ion-card class="bg-white">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4">
+                  <ion-img [src]="chair2"></ion-img>
+
+                </ion-col>
+            <ion-col size="8">
+                <ion-label>
+                    <ion-text text-wrap color="secondary">
+                      <h5><strong>Vintage Minimalist Sofa</strong></h5>
+                    </ion-text>
+                    <ion-text text-wrap color="secondary">
+                      <h6>
+                          Classic Cougar Couch
+                      </h6>
+                    </ion-text>
+               
+                 
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Price:</strong> UGX. 2,000,000
+                            </h6>
+                         
+                        </ion-text>
+
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Category:</strong> Chairs
+                            </h6>
+                         
+                        </ion-text>
+                    
+                     
+                   
+               
+                  </ion-label>
+              
+    
+            </ion-col>
+           
+           
+         
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    
+    </ion-item>
+
+    <ion-item lines="none" style="color:black">
+      <ion-card class="bg-white">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4">
+                  <ion-img [src]="chair1"></ion-img>
+
+                </ion-col>
+            <ion-col size="8">
+                <ion-label>
+                    <ion-text text-wrap color="secondary">
+                      <h5><strong>Grey Mid-Century Sofa</strong></h5>
+                    </ion-text>
+                    <ion-text text-wrap color="secondary">
+                      <h6>
+                          Vintage 70’s couch with ashy finish
+                      </h6>
+                    </ion-text>
+               
+                 
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Price:</strong> UGX. 950,000
+                            </h6>
+                         
+                        </ion-text>
+
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Category:</strong> Chairs
+                            </h6>
+                         
+                        </ion-text>
+                    
+                     
+                   
+               
+                  </ion-label>
+              
+    
+            </ion-col>
+           
+           
+         
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    
+    </ion-item>
+
+    <ion-item lines="none" style="color:black">
+      <ion-card class="bg-white">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4">
+                  <ion-img [src]="chair2"></ion-img>
+
+                </ion-col>
+            <ion-col size="8">
+                <ion-label>
+                    <ion-text text-wrap color="secondary">
+                      <h5><strong>Vintage Minimalist Sofa</strong></h5>
+                    </ion-text>
+                    <ion-text text-wrap color="secondary">
+                      <h6>
+                          Classic Cougar Couch
+                      </h6>
+                    </ion-text>
+               
+                 
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Price:</strong> UGX. 2,000,000
+                            </h6>
+                         
+                        </ion-text>
+
+                        <ion-text color="dark">
+                        
+                            <h6>
+                                <strong>Category:</strong> Chairs
+                            </h6>
+                         
+                        </ion-text>
+                    
+                     
+                   
+               
+                  </ion-label>
+              
+    
+            </ion-col>
+           
+           
+         
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    
+    </ion-item>
+
+
+    
+    
+  
+  </ion-list>
+ 
+  
+
+
+</ion-content>
+  

@@ -1,0 +1,126 @@
+<ion-header>
+    <ion-toolbar text-center color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title >
+          <ion-text>
+            <ion-text style="margin-right: 45px;color:white" class="fw700">Interior<span style="font-weight:350;">Junction</span></ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header>
+
+<ion-content class="fashion-details-content">
+  <ion-row class="slider-row">
+    <ion-slides class="details-slides" pager="true" [options]="slidesOptions">
+      <ion-slide class="">
+        <ion-row class="slide-inner-row">
+          <app-image-shell [mode]="'cover'" animation="spinner" class="showcase-image"  [src]="x.icon">
+            <app-aspect-ratio [ratio]="{w:64, h:50}">
+            </app-aspect-ratio>
+          </app-image-shell>
+        </ion-row>
+      </ion-slide>
+      <ion-slide class="">
+          <ion-row class="slide-inner-row">
+            <app-image-shell [mode]="'cover'" animation="spinner" class="showcase-image"  [src]="x.icon">
+              <app-aspect-ratio [ratio]="{w:64, h:50}">
+              </app-aspect-ratio>
+            </app-image-shell>
+          </ion-row>
+        </ion-slide>
+    </ion-slides>
+  </ion-row>
+  <div class="description-wrapper">
+    <h3 class="details-name">
+      <app-text-shell animation="gradient" [data]="x.title"></app-text-shell>
+    </h3>
+  
+    <span class="details-price">
+      <app-text-shell animation="gradient" [data]="x.price | currency"></app-text-shell>
+    </span>
+ 
+  </div>
+ 
+  <div class="details-description-wrapper">
+    <h3 class="detail-title">About this item</h3>
+    <p class="details-description">
+      <app-text-shell animation="gradient" [data]="x.description" lines="5"></app-text-shell>
+    </p>
+  </div>
+  <div class="details-description-wrapper">
+    <h3 class="detail-title">Brand</h3>
+    <p class="details-description">
+      <app-text-shell animation="gradient" [data]="'Kornak'" lines="3"></app-text-shell>
+    </p>
+  </div>
+  <div class="details-description-wrapper">
+      <h3 class="detail-title">Size</h3>
+      <p class="details-description">
+        <app-text-shell animation="gradient" [data]="'Length: 33, Width: 2 Feet'" lines="3"></app-text-shell>
+      </p>
+    </div>
+  <div class="details-description-wrapper">
+    <h3 class="detail-title">Color</h3>
+    <span class="details-description product-code">
+      <app-text-shell animation="gradient" [data]="'Green'"></app-text-shell>
+    </span>
+  </div>
+  <!-- Related Products -->
+  <div class="related-products-wrapper">
+    <h3 class="detail-alt-title">Similar Products</h3>
+    <ion-row class="related-products-list">
+      <ion-col size="6" class="related-product-item">
+        <div class="item-image-wrapper">
+          <a class="image-anchor">
+            <app-aspect-ratio [ratio]="{w: 3, h: 4}">
+              <app-image-shell class="related-product-image" animation="spinner" [src]="x.icon" [alt]="'related image'"></app-image-shell>
+            </app-aspect-ratio>
+          </a>
+        </div>
+        <div class="item-details-wrapper">
+          <h4 class="item-name">
+            <a class="name-anchor">
+              <app-text-shell animation="gradient" [data]="x.title"></app-text-shell>
+            </a>
+          </h4>
+          <span class="item-sale-price">
+              <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+             <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+             <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+          </span>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="related-product-item">
+          <div class="item-image-wrapper">
+            <a class="image-anchor">
+              <app-aspect-ratio [ratio]="{w: 3, h: 4}">
+                <app-image-shell class="related-product-image" animation="spinner" [src]="x.icon" [alt]="'related image'"></app-image-shell>
+              </app-aspect-ratio>
+            </a>
+          </div>
+          <div class="item-details-wrapper">
+            <h4 class="item-name">
+              <a class="name-anchor">
+                <app-text-shell animation="gradient" [data]="x.title"></app-text-shell>
+              </a>
+            </h4>
+            <span class="item-sale-price">
+                <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+              <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+              <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+               <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+               <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            </span>
+          </div>
+        </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

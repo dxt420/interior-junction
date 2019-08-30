@@ -1,0 +1,116 @@
+{
+    "homeCategory": 
+      {
+        "title": "Home Furniture",
+        "livingRoomSubCategory": 
+        
+          {
+            "title": "Living Room",
+            "icon":"https://png.pngtree.com/thumb_back/fh260/back_pic/03/83/02/7257c8374d5a7d3.jpg",
+            "items": [
+              {
+                "title": "Sofas",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Couches",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Stools",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Coffee Tables ",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Shelves",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              }
+            ]
+          },
+          "bedroomSubCategory": 
+          {
+            "title": "Bedroom",
+            "icon":"https://img.icons8.com/officel/64/000000/bedroom.png",
+            "items": [
+              {
+                "title": "Beds",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Bedside Tables",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Stools",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Dressers",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Wardrobes",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              }
+            ]
+
+            
+          },
+          "kitchenSubCategory": 
+          {
+            "title": "Kitchen & Dining",
+            "icon":"https://img.icons8.com/dusk/64/000000/table.png",
+            "items": [
+              {
+                "title": "Cupboards",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Shelves",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Dining Tables",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Dining Chairs",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              }
+            ]
+
+
+             
+            
+          },
+          "porchSubCategory": 
+          {
+            "title": "Porch & Shed",
+            "icon":"https://img.icons8.com/cotton/64/000000/furniture-store.png",
+            "items": [
+              {
+                "title": "Lawn Chairs",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Hammocks",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              },
+              {
+                "title": "Patio Chairs",
+                "icon":"https://img.icons8.com/officel/64/000000/bedroom.png"
+              }
+
+            ]
+            
+          }
+        
+      }
+
+    
+  }
+
+  

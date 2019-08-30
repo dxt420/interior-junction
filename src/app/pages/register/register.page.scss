@@ -1,0 +1,14 @@
+:host {
+  ion-content {
+    --background: var(--ion-color-primary);
+  }
+
+  ion-input{
+    padding: 5px !important;
+    border-radius:20px;
+    border:solid 1px var(--ion-color-light);
+    text-align: center;
+    color: var(--ion-color-light);
+    background-color: white;
+}
+}

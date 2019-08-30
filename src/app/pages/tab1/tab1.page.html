@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-toolbar text-center color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button ></ion-menu-button>
+      </ion-buttons>
+      <ion-title >
+          <ion-text>
+            <ion-text style="margin-right: 45px;color:white" class="fw700">Interior<span style="font-weight:350;">Junction</span></ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header>
+  
+  <ion-content #content>
+   
+    <ion-item-divider sticky>
+      <h3 class="title" padding>{{dataService.data.homeCategory.title }}</h3>
+    </ion-item-divider>
+ 
+   
+    <!-- <ion-list-header ion-affix [content]="content" (click)="test()">Group 1</ion-list-header> -->
+    <div (click)="goToSub(dataService.data.homeCategory.livingRoomSubCategory)" class="section first">
+      <div class="module one lB">
+        <p> {{dataService.data.homeCategory.livingRoomSubCategory.title }}</p>
+      </div>
+    </div>
+
+    <div class="section  ">
+      <div class="module two lR other">
+        <p>    {{dataService.data.homeCategory.bedroomSubCategory.title }}</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="module three lB other">
+        <p> {{dataService.data.homeCategory.kitchenSubCategory.title }}</p>
+      </div>
+    </div>
+
+
+    <div class="section ">
+      <div class="module four lR other last">
+        <p>  {{dataService.data.homeCategory.porchSubCategory.title }}</p>
+      </div>
+    </div>
+
+
+
+  
+   
+
+
+
+    
+    
+  
+  </ion-content>
+
+    

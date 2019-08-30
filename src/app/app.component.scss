@@ -1,0 +1,28 @@
+:host {
+    ion-content {
+        // --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+        --background: var(--app-background);
+    }
+
+    ion-list {
+        &.list-md {
+            padding: 0;
+        }
+    }
+
+    ion-icon {
+        &[class*="custom-"] {
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+            $sz: 20px;
+            width: $sz;
+            height: $sz;
+        } // custom icons
+     
+      &[class*="google"] {
+        // background: url("../assets/imgs/icons/android/abc-app-notificationmdpi.png") no-repeat 50% 50%;
+        background: url("../assets/img/ionic4start-ico.png") no-repeat 50% 50%;
+        background-size: contain;
+      }
+      }
+}

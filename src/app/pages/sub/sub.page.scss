@@ -1,0 +1,86 @@
+.module {
+
+  width: 94%;
+  height: 120px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  float: left;
+}
+
+.lB p {
+
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.one{
+  background:  
+  linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/83/02/7257c8374d5a7d3.jpg);
+background-size: cover;
+border-radius: 15px 15px 0px 0px;
+}
+  .firebase-listing-content {
+  
+  
+    .items-list {
+      .list-item {
+        --padding-start: var(--page-margin);
+        --padding-end: 0px;
+        --inner-padding-start: 0px;
+        --inner-padding-end: var(--page-margin);
+        --inner-padding-top: calc(var(--page-margin) / 2);
+        --inner-padding-bottom: calc(var(--page-margin) / 2);
+  
+        .user-row {
+          --ion-grid-column-padding: 0px;
+  
+          width: 100%;
+  
+          .user-image-wrapper {
+            padding-inline-end: calc(var(--page-margin) / 2);
+          }
+  
+          .user-data-wrapper {
+            padding-inline-start: calc(var(--page-margin) / 2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+  
+            .user-info {
+              &:not(:last-child) {
+                margin-bottom: calc(var(--page-margin) / 2);
+              }
+  
+              .user-name {
+                margin: 0px;
+                margin-bottom: calc(var(--page-margin) / 4);
+                font-size: 16px;
+              }
+  
+              .user-age {
+                margin: 0px;
+                color: rgba(var(--ion-color-dark-rgb), 0.4);
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .empty-list-message {
+      margin: calc(var(--page-margin) * 3);
+      color: rgba(var(--ion-color-dark-rgb), 0.4);
+      text-align: center;
+    }
+  }
+  

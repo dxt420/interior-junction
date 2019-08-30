@@ -1,0 +1,52 @@
+
+
+
+
+
+
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title>{{x.title}} </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="deals-details-content real-state-listing-content">
+    <div class="listing-item">
+      <ion-row class="image-row">
+        <ion-col size="12">
+          <a class="image-anchor">
+            <app-image-shell [mode]="'cover'" animation="spinner" class="item-picture" [src]="x.icon">
+              <app-aspect-ratio [ratio]="{w:365, h:125}">
+              </app-aspect-ratio>
+            </app-image-shell>
+          </a>
+        </ion-col>
+      </ion-row>
+      <div class="related-deals-wrapper" >
+          <!-- <h3 class="related-deals-title">Browse by sub-category</h3> -->
+          <ion-row class="related-deal" *ngFor="let item of x.items">
+            <ion-col class="deal-logo-wrapper" size="4">
+              <app-aspect-ratio [ratio]="{w: 1, h: 1}">
+                <app-image-shell [src]="item.icon" [alt]="'deals logo'" class="related-deal-logo" animation="spinner"></app-image-shell>
+              </app-aspect-ratio>
+            </ion-col>
+            <ion-col class="deal-info-wrapper" size="8">
+              <h4 class="related-deal-title">
+                <app-text-shell [data]="item.title"></app-text-shell>
+              </h4>
+              <!-- <p class="related-deal-description">
+                <app-text-shell [data]="deal?.description"></app-text-shell>
+              </p> -->
+            </ion-col>
+          </ion-row>
+        </div>
+    </div>
+
+
+
+  
+  </ion-content>
+  

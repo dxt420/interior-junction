@@ -1,0 +1,48 @@
+
+<ion-header>
+    <ion-toolbar text-center color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title >
+          <ion-text>
+            <ion-text style="margin-right: 45px;color:white" class="fw700">Interior<span style="font-weight:350;">Junction</span></ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header>
+
+<ion-content class="travel-details-content">
+  
+  <div class="suggested-places-wrapper" *ngIf="x.length > 0">
+    <h3 class="detail-alt-title"></h3>
+    <ion-row class="suggested-places-row">
+      <ion-col size="4" class="suggested-place" *ngFor="let i of x">
+        <app-aspect-ratio [ratio]="{w: 18, h: 23}">
+          <app-image-shell class="place-picture" animation="spinner" [src]="i.icon"></app-image-shell>
+        </app-aspect-ratio>
+        <div class="place-details">
+          <h5 class="place-name">
+            <app-text-shell [data]="i.title"></app-text-shell>
+          </h5>
+          <div class="place-rating">
+            <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+             <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+             <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+            <div class="rating-value">
+              <app-text-shell [data]="i?.rating"></app-text-shell>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  
+  
+</ion-content>
